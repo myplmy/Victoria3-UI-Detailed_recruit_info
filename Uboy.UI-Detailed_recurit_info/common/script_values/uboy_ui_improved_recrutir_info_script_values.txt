@@ -1,0 +1,20 @@
+﻿uboy_ui_improved_recruit_info_commander_defense = {
+	value = modifier:unit_defense_mult
+}
+uboy_ui_improved_recruit_info_commander_offense = {
+	value = modifier:unit_offense_mult
+}
+uboy_ui_improved_recruit_info_commander_kill_rate = {
+	value = modifier:unit_kill_rate_add
+}
+
+uboy_ui_improved_recruit_info_commander_morale_damage = {
+	value = modifier:unit_morale_damage_mult
+}
+
+uboy_ui_improved_recruit_info_commander_morale_loss = {
+	value = modifier:unit_morale_loss_mult
+}
+uboy_ui_improved_recruit_info_commander_popularity = {
+	value = modifier:character_popularity_add
+}
