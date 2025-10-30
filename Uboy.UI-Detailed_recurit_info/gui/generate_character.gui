@@ -140,8 +140,6 @@ types generate_character_types
 										#parentanchor = left|vcenter
 										parentanchor = left|top
 										### Uboy.UI-DETAILED RECRUIT INFO MODIFIED END
-										margin_left = 5
-										spacing = 5
 										
 										### RANK
 
@@ -160,13 +158,15 @@ types generate_character_types
 											texture = "gfx/interface/icons/military_icons/offense.dds"
 										}
 										textbox = {
+											margin = { 5 0 }
+											size = { 50 30 }
 											text = "[Character.MakeScope.ScriptValue('uboy_ui_improved_recruit_info_commander_offense')|%=+0]"
 											autoresize = yes
 											
 											tooltip = "concept_offense_desc"
 											
 											parentanchor = left|vcenter
-											align = left|nobaseline
+											align = right|nobaseline
 										}
 										
 
@@ -175,13 +175,15 @@ types generate_character_types
 											texture = "gfx/interface/icons/military_icons/defense.dds"
 										}
 										textbox = {
+											margin = { 5 0 }
+											size = { 50 30 }
 											text = "[Character.MakeScope.ScriptValue('uboy_ui_improved_recruit_info_commander_defense')|%=+0]"
 											autoresize = yes
 											
 											tooltip = "concept_defense_desc"
 											
 											parentanchor = left|vcenter
-											align = left|nobaseline
+											align = right|nobaseline
 										}
 
 										
@@ -205,13 +207,15 @@ types generate_character_types
 										#	align = left|nobaseline
 										#}
 										textbox = {
+											margin = { 5 0 }
+											size = { 50 30 }
 											text = "[Character.MakeScope.ScriptValue('uboy_ui_improved_recruit_info_commander_kill_rate')|%=+0]"
 											autoresize = yes
 											
 											tooltip = "concept_kill_rate_desc"
 											
 											parentanchor = left|vcenter
-											align = left|nobaseline
+											align = right|nobaseline
 										}
 										### Uboy.UI-DETAILED RECRUIT INFO MODIFIED END
 									}
@@ -254,7 +258,6 @@ types generate_character_types
 										#margin_left = 100
 										#visible = "[Not(Character.IsHeir)]"
 										datacontext = "[Character.AccessInterestGroup]"
-										spacing = 5
 										
 										icon = {
 											size = { 30 30 }
@@ -274,13 +277,14 @@ types generate_character_types
 												tooltipwidget = {
 													FancyTooltip_IG = {}
 												}
+											}
+										}
 									}
 									
 									flowcontainer = {
 										name = "uboy_ui_improved_recruit_info_detailed_info"
 										parentanchor = left|bottom
-										margin_left = 5
-										spacing = 5
+
 
 										widget = {
 											size = { 30 30 }
@@ -293,18 +297,20 @@ types generate_character_types
 
 											icon = {
 												texture = "gfx/interface/icons/military_icons/offense.dds"
-												size = { 20 20 }
-												position = { 15 5 }
-												parentanchor = bottom
-
+												size = { 15 15 }
+												position = { 0 0 }
+												parentanchor = right|bottom
 											}
 										}
-
+										textbox ={
+											margin = { 5 0 }
+											size = { 50 30 }
 											text = "[Character.MakeScope.ScriptValue('uboy_ui_improved_recruit_info_commander_morale_damage')|%=+0]"
 											parentanchor = left|vcenter
-											align = left|nobaseline
+											align = left|vcenter
 											tooltip = "concept_morale_damage_desc"
 										}
+										
 
 
 										widget = {
@@ -314,21 +320,22 @@ types generate_character_types
 												size = { 30 30 }
 												texture = "gfx/interface/icons/military_icons/morale.dds"
 												parentanchor = center
-
+											}
 											icon = {
 												texture = "gfx/interface/icons/military_icons/defense.dds"
-												size = { 20 20 }
-												position = { 15 5 }
-												parentanchor = bottom
+												size = { 15 15 }
+												position = { 0  }
+												parentanchor = right|bottom
 
 											}
 										}
 
 										textbox = {
+											size = { 50 30 }
 											text = "[Character.MakeScope.ScriptValue('uboy_ui_improved_recruit_info_commander_morale_loss')|%=-0]"
 											autoresize = yes
 											parentanchor = left|vcenter
-											align = left|nobaseline
+											align = left|vcenter
 											tooltip = "unit_morale_loss_mult_desc"
 										}
 
@@ -337,23 +344,22 @@ types generate_character_types
 									flowcontainer = {
 										name = "uboy_ui_improved_recruit_info_detailed_info_rb"
 										parentanchor = right|bottom
-										margin_right = 10
-
 										datacontext = "[Character.AccessInterestGroup]"
-										spacing = 5
 										
 										icon = {
 											size = { 30 30 }
 											texture = "gfx/interface/icons/generic_icons/popularity.dds"
 										}
 										textbox = {
+											margin_left = 5
+											size = { 30 30 }
 											text = "[Character.MakeScope.ScriptValue('uboy_ui_improved_recruit_info_commander_popularity')|+0]"
 											autoresize = yes
 											tooltip = "concept_popularity_desc"
 											
 											
 											parentanchor = left|vcenter
-											align = left|nobaseline
+											align = right|nobaseline
 										}
 									}
 								}
