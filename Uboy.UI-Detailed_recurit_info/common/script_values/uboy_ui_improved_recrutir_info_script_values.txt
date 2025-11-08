@@ -18,3 +18,6 @@ uboy_ui_improved_recruit_info_commander_morale_loss = {
 uboy_ui_improved_recruit_info_commander_popularity = {
 	value = modifier:character_popularity_add
 }
+uboy_ui_improved_recruit_info_commander_supply_consumption = {
+	value = modifier:unit_supply_consumption_mult
+}

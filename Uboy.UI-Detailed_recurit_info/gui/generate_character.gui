@@ -156,13 +156,12 @@ types generate_character_types
 										icon = {
 											size = { 30 30 }
 											texture = "gfx/interface/icons/military_icons/offense.dds"
+                                            tooltip = "concept_offense"
 										}
 										textbox = {
 											margin = { 5 0 }
 											size = { 50 30 }
 											text = "[Character.MakeScope.ScriptValue('uboy_ui_improved_recruit_info_commander_offense')|%=+0]"
-											autoresize = yes
-											
 											tooltip = "concept_offense_desc"
 											
 											parentanchor = left|vcenter
@@ -173,13 +172,12 @@ types generate_character_types
 										icon = {
 											size = { 30 30 }
 											texture = "gfx/interface/icons/military_icons/defense.dds"
+                                            tooltip = "concept_defense"
 										}
 										textbox = {
 											margin = { 5 0 }
 											size = { 50 30 }
 											text = "[Character.MakeScope.ScriptValue('uboy_ui_improved_recruit_info_commander_defense')|%=+0]"
-											autoresize = yes
-											
 											tooltip = "concept_defense_desc"
 											
 											parentanchor = left|vcenter
@@ -190,6 +188,7 @@ types generate_character_types
 										icon = {
 											size = { 30 30 }
 											texture = "gfx/interface/icons/military_icons/attrition.dds"
+                                            tooltip = "concept_kill_rate"
 										}
 										### Uboy.UI-DETAILED RECRUIT INFO MODIFIED END
 										### Uboy.UI-DETAILED RECRUIT INFO MODIFIED
@@ -210,8 +209,6 @@ types generate_character_types
 											margin = { 5 0 }
 											size = { 50 30 }
 											text = "[Character.MakeScope.ScriptValue('uboy_ui_improved_recruit_info_commander_kill_rate')|%=+0]"
-											autoresize = yes
-											
 											tooltip = "concept_kill_rate_desc"
 											
 											parentanchor = left|vcenter
@@ -268,6 +265,11 @@ types generate_character_types
 												FancyTooltip_Ideology = {}
 											}
 										}
+                                        ## space between icons
+                                        textbox = {
+                                            raw_text = ""
+                                            size = { 10 30 }
+                                        } 
 
 										character_ig_icon = {
 											datacontext = "[Character.AccessInterestGroup]"
@@ -287,6 +289,7 @@ types generate_character_types
 
 
 										widget = {
+                                            margin_left = 0
 											size = { 30 30 }
 											parentanchor = left|vcenter
 											icon = {
@@ -301,13 +304,14 @@ types generate_character_types
 												position = { 0 0 }
 												parentanchor = right|bottom
 											}
+                                            tooltip = "concept_morale_damage"
 										}
 										textbox ={
 											margin = { 5 0 }
 											size = { 50 30 }
 											text = "[Character.MakeScope.ScriptValue('uboy_ui_improved_recruit_info_commander_morale_damage')|%=+0]"
 											parentanchor = left|vcenter
-											align = left|vcenter
+											align = right|nobaseline
 											tooltip = "concept_morale_damage_desc"
 										}
 										
@@ -324,19 +328,34 @@ types generate_character_types
 											icon = {
 												texture = "gfx/interface/icons/military_icons/defense.dds"
 												size = { 15 15 }
-												position = { 0  }
+												position = { 0 0 }
 												parentanchor = right|bottom
 
 											}
+                                            tooltip = "unit_morale_loss_mult"
 										}
 
 										textbox = {
+                                            margin = { 5 0 }
 											size = { 50 30 }
 											text = "[Character.MakeScope.ScriptValue('uboy_ui_improved_recruit_info_commander_morale_loss')|%=-0]"
-											autoresize = yes
 											parentanchor = left|vcenter
-											align = left|vcenter
+											align = right|vcenter
 											tooltip = "unit_morale_loss_mult_desc"
+										}
+
+                                        icon = {
+											size = { 30 30 }
+											texture = "gfx/interface/icons/goods_icons/small_arms.dds"
+                                            tooltip = "unit_supply_consumption_mult"
+										}
+                                        textbox = {
+                                            margin = { 5 0 }
+											size = { 50 30 }
+											text = "[Character.MakeScope.ScriptValue('uboy_ui_improved_recruit_info_commander_supply_consumption')|%=-0]"
+											parentanchor = left|vcenter
+											align = right|vcenter
+											tooltip = "unit_supply_consumption_mult_desc"
 										}
 
 									}
@@ -352,9 +371,8 @@ types generate_character_types
 										}
 										textbox = {
 											margin_left = 5
-											size = { 30 30 }
-											text = "[Character.MakeScope.ScriptValue('uboy_ui_improved_recruit_info_commander_popularity')|+0]"
-											autoresize = yes
+											size = { 40 30 }
+                                            text = "[Character.MakeScope.ScriptValue('uboy_ui_improved_recruit_info_commander_popularity')|+0]"
 											tooltip = "concept_popularity_desc"
 											
 											
@@ -363,6 +381,7 @@ types generate_character_types
 										}
 									}
 								}
+                                ### Uboy.UI-DETAILED RECRUIT INFO MODIFIED END
 
 								divider_clean = {
 									parentanchor = hcenter
