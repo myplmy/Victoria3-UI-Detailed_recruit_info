@@ -1,8 +1,8 @@
 {
   "name" : "Uboy.UI-Detailed recruit info",
   "id" : "uboy.ui.detailedrecruitinfo",
-  "version" : "1.1.0",
-  "supported_game_version" : "1.11.*",
+  "version" : "1.1.1",
+  "supported_game_version" : "1.12.*",
   "picture" :  "thumbnail.png",
   "short_description":"Displays additional details for generals and admirals in the recruit popup.",
   "tags" : ["Utilities","UI"],
